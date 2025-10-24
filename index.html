@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Gaming Website</title>
     <style>
-        body { background-color: black; color: white; font-family: Arial, sans-serif; }
-        h1 { color: #ff0000; text-align: center; }
-        .game-card { border: 1px solid #fff; padding: 10px; margin: 10px; }
+        body { background-color: black; color: white; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        h1 { color: #ff0000; text-align: center; text-shadow: 0 0 10px #ff0000; }
+        nav { text-align: center; margin: 20px 0; }
+        nav a { color: #00ff00; text-decoration: none; margin: 0 10px; }
+        nav a:hover { text-decoration: underline; }
+        .game-card { border: 1px solid #fff; padding: 10px; margin: 10px; background-color: #222; border-radius: 10px; }
+        .game-card:hover { transform: scale(1.05); transition: 0.3s; }
+        iframe { max-width: 100%; height: auto; border-radius: 10px; }
+        footer { text-align: center; padding: 20px; background-color: #111; }
+        section { padding: 20px; max-width: 1200px; margin: 0 auto; }
     </style>
 </head>
 <body>
@@ -16,7 +23,8 @@
         <nav>
             <a href="#home">Home</a> | 
             <a href="#reviews">Reviews</a> | 
-            <a href="#community">Community</a>
+            <a href="#community">Community</a> | 
+            <a href="#kids-boys-games">Kids & Boys Games</a>
         </nav>
     </header>
     
@@ -26,12 +34,12 @@
             <div class="game-card">
                 <h3>Elden Ring</h3>
                 <p>An epic open-world adventure. Rating: 9.5/10</p>
-                <img src="elden-ring.jpg" alt="Elden Ring Cover" width="200">
+                <img src="https://via.placeholder.com/200x300?text=Elden+Ring+Cover" alt="Elden Ring Cover" width="200">
             </div>
             <div class="game-card">
                 <h3>Fortnite</h3>
                 <p>Battle Royale fun with friends. Rating: 8/10</p>
-                <img src="fortnite.jpg" alt="Fortnite Cover" width="200">
+                <img src="https://via.placeholder.com/200x300?text=Fortnite+Cover" alt="Fortnite Cover" width="200">
             </div>
         </section>
         
@@ -43,6 +51,39 @@
         <section id="community">
             <h2>Join the Community</h2>
             <p>Discuss strategies and share tips in our forums.</p>
+        </section>
+        
+        <section id="kids-boys-games">
+            <h2>Games for Kids and Boys</h2>
+            <p>Fun, safe games for all ages! Play directly in your browser. (Note: Always check with parents for younger kids.)</p>
+            
+            <div class="game-card">
+                <h3>Super Mario Bros. (Classic Platformer)</h3>
+                <p>A fun adventure game for boys—jump, collect coins, and defeat enemies! Suitable for ages 6+.</p>
+                <iframe src="https://www.retrogames.com/embed/Super-Mario-Bros.html" width="600" height="400" frameborder="0"></iframe>
+                <p><a href="https://www.retrogames.com/super-mario-bros.html" target="_blank">Play Full Version</a></p>
+            </div>
+            
+            <div class="game-card">
+                <h3>Pac-Man (Arcade Classic)</h3>
+                <p>Eat dots and avoid ghosts in this timeless game. Great for kids and boys alike!</p>
+                <iframe src="https://www.retrogames.com/embed/Pac-Man.html" width="600" height="400" frameborder="0"></iframe>
+                <p><a href="https://www.retrogames.com/pac-man.html" target="_blank">Play Full Version</a></p>
+            </div>
+            
+            <div class="game-card">
+                <h3>Fruit Ninja (Slicing Fun)</h3>
+                <p>Slice fruits with your mouse or finger—perfect for kids to practice hand-eye coordination!</p>
+                <iframe src="https://www.fruitninja.com/" width="600" height="400" frameborder="0"></iframe>
+                <p><a href="https://www.fruitninja.com/" target="_blank">Play Full Version</a></p>
+            </div>
+            
+            <div class="game-card">
+                <h3>Minecraft: Education Edition Demo</h3>
+                <p>Build and explore in a safe, creative world. Ideal for boys interested in crafting!</p>
+                <iframe src="https://education.minecraft.net/en-us/lessons/play" width="600" height="400" frameborder="0"></iframe>
+                <p><a href="https://education.minecraft.net/en-us" target="_blank">Learn More</a></p>
+            </div>
         </section>
     </main>
     
