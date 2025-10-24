@@ -3,92 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gaming Website</title>
-    <style>
-        body { background-color: black; color: white; font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        h1 { color: #ff0000; text-align: center; text-shadow: 0 0 10px #ff0000; }
-        nav { text-align: center; margin: 20px 0; }
-        nav a { color: #00ff00; text-decoration: none; margin: 0 10px; }
-        nav a:hover { text-decoration: underline; }
-        .game-card { border: 1px solid #fff; padding: 10px; margin: 10px; background-color: #222; border-radius: 10px; }
-        .game-card:hover { transform: scale(1.05); transition: 0.3s; }
-        iframe { max-width: 100%; height: auto; border-radius: 10px; }
-        footer { text-align: center; padding: 20px; background-color: #111; }
-        section { padding: 20px; max-width: 1200px; margin: 0 auto; }
-    </style>
+    <title>Neon Gaming Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Gaming Hub!</h1>
-        <nav>
-            <a href="#home">Home</a> | 
-            <a href="#reviews">Reviews</a> | 
-            <a href="#community">Community</a> | 
-            <a href="#kids-boys-games">Kids & Boys Games</a>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="home">
-            <h2>Featured Games</h2>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/50x50?text=LOGO" alt="Neon Gaming Logo">
+                <span>Neon Gaming Hub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><button class="glow-btn" id="search-btn">Search</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Neon Gaming Hub</h1>
+        <p>Discover the latest games, climb the ranks, and level up your gaming experience.</p>
+        <button class="glow-btn" id="cta-btn">Explore Now</button>
+    </section>
+
+    <section id="trending" class="trending-games">
+        <h2>Trending Games</h2>
+        <div class="games-grid">
             <div class="game-card">
+                <img src="https://via.placeholder.com/300x200?text=Elden+Ring" alt="Elden Ring">
                 <h3>Elden Ring</h3>
-                <p>An epic open-world adventure. Rating: 9.5/10</p>
-                <img src="https://via.placeholder.com/200x300?text=Elden+Ring+Cover" alt="Elden Ring Cover" width="200">
+                <p>Epic open-world adventure.</p>
             </div>
             <div class="game-card">
+                <img src="https://via.placeholder.com/300x200?text=Fortnite" alt="Fortnite">
                 <h3>Fortnite</h3>
-                <p>Battle Royale fun with friends. Rating: 8/10</p>
-                <img src="https://via.placeholder.com/200x300?text=Fortnite+Cover" alt="Fortnite Cover" width="200">
+                <p>Battle Royale showdown.</p>
             </div>
-        </section>
-        
-        <section id="reviews">
-            <h2>Latest Reviews</h2>
-            <p>Check out our in-depth reviews of the hottest games!</p>
-        </section>
-        
-        <section id="community">
-            <h2>Join the Community</h2>
-            <p>Discuss strategies and share tips in our forums.</p>
-        </section>
-        
-        <section id="kids-boys-games">
-            <h2>Games for Kids and Boys</h2>
-            <p>Fun, safe games for all ages! Play directly in your browser. (Note: Always check with parents for younger kids.)</p>
-            
             <div class="game-card">
-                <h3>Super Mario Bros. (Classic Platformer)</h3>
-                <p>A fun adventure game for boys—jump, collect coins, and defeat enemies! Suitable for ages 6+.</p>
-                <iframe src="https://www.retrogames.com/embed/Super-Mario-Bros.html" width="600" height="400" frameborder="0"></iframe>
-                <p><a href="https://www.retrogames.com/super-mario-bros.html" target="_blank">Play Full Version</a></p>
+                <img src="https://via.placeholder.com/300x200?text=Cyberpunk+2077" alt="Cyberpunk 2077">
+                <h3>Cyberpunk 2077</h3>
+                <p>Futuristic RPG action.</p>
             </div>
-            
             <div class="game-card">
-                <h3>Pac-Man (Arcade Classic)</h3>
-                <p>Eat dots and avoid ghosts in this timeless game. Great for kids and boys alike!</p>
-                <iframe src="https://www.retrogames.com/embed/Pac-Man.html" width="600" height="400" frameborder="0"></iframe>
-                <p><a href="https://www.retrogames.com/pac-man.html" target="_blank">Play Full Version</a></p>
+                <img src="https://via.placeholder.com/300x200?text=Among+Us" alt="Among Us">
+                <h3>Among Us</h3>
+                <p>Social deduction fun.</p>
             </div>
-            
-            <div class="game-card">
-                <h3>Fruit Ninja (Slicing Fun)</h3>
-                <p>Slice fruits with your mouse or finger—perfect for kids to practice hand-eye coordination!</p>
-                <iframe src="https://www.fruitninja.com/" width="600" height="400" frameborder="0"></iframe>
-                <p><a href="https://www.fruitninja.com/" target="_blank">Play Full Version</a></p>
-            </div>
-            
-            <div class="game-card">
-                <h3>Minecraft: Education Edition Demo</h3>
-                <p>Build and explore in a safe, creative world. Ideal for boys interested in crafting!</p>
-                <iframe src="https://education.minecraft.net/en-us/lessons/play" width="600" height="400" frameborder="0"></iframe>
-                <p><a href="https://education.minecraft.net/en-us" target="_blank">Learn More</a></p>
-            </div>
-        </section>
-    </main>
-    
+        </div>
+    </section>
+
+    <section id="leaderboard" class="leaderboard">
+        <h2>Top Players Leaderboard</h2>
+        <table id="leaderboard-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>GamerX</td>
+                    <td>99999</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>NeonNinja</td>
+                    <td>88888</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>PixelPro</td>
+                    <td>77777</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <footer>
-        <p>&copy; 2023 My Gaming Website. All rights reserved.</p>
+        <div class="footer-container">
+            <p>&copy; 2023 Neon Gaming Hub. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
